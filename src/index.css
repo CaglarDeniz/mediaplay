@@ -1,0 +1,103 @@
+:root {
+	--uofiblue: #13294b;
+	--uofiaccentblue:#0455a4;
+	--uofilightgray: #e8e9ea;
+	--uoficoolgray:#a5a8aa;
+	--uofidarkgray: #5e6669;
+	--uofichampaignorange: #e84a27;
+	--uofichicagored: #d50032;
+	--teal: #0d605e;
+	--gray-blue: #6fafc7;
+	--citron: #bfd46d;
+	--dark-yellow: #ffd125;
+	--salmon: #ee5e5e;
+	--periwinkle: #4f6898;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+	display:flex;
+
+	flex-direction:column;
+	align-items:center;
+	
+	background-color: var(--uofiblue);
+	color: white;
+	font-family: 'Montserrat',sans-serif;
+
+	font-size: 1.5em;
+}
+
+body > img {
+	margin-top:5%;
+}
+
+
+#root {
+	width:100vw;
+	height:100vh;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+#css-root {
+	width:80%;
+	height:60%;
+	
+	margin-left:10%;
+	margin-right:10%;
+	margin-top: 2.5%;
+	margin-bottom: 5%;
+	
+	background-color:var(--uofichampaignorange);
+	
+	border-radius: 5px;
+	border-width: 5px;
+	border-color: var(--uoficoolgray); 
+	border-style: solid;
+	
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-start;
+	align-items:center;
+}
+
+#button-div{
+
+	width:100%;
+
+	display:flex;
+
+	flex-direction:row;
+	justify-content:center;
+
+	font-size:10em;
+}
+
+#button-div button {
+
+	width:50%;
+
+	background-color: var(--uofiaccentblue);
+	
+	color:white;
+	
+	border-color: var(--uofilightgray);
+
+	font-size: 20px;
+}
+
+.downloadWindow{
+
+	height:90%;
+	
+	display:flex;
+
+	flex-direction:column;
+	justify-content:space-evenly;
+	align-items: center;
+
+}
+

@@ -2,8 +2,10 @@ FROM ubuntu:latest
 
 # getting list of available packages
 RUN DEBIAN_FRONTEND="noninteractive" apt update 
-#installing python dependencies
+
 RUN DEBIAN_FRONTEND="noninteractive" apt install python3 python3-pip firefox tmux vim ffmpeg -y 
+
+#installing python dependencies
 RUN python3 -m pip install --upgrade pip
 RUN python3 -m pip install selenium tqdm flask webdriver-manager
 
@@ -20,8 +22,6 @@ ENV FLASK_APP=server
 #copying current directory contents into docker
 WORKDIR /mediaplay
 
-# expose flask server port
-EXPOSE 5000/tcp
 # expose react app port
 EXPOSE 3000/tcp
 

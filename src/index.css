@@ -80,11 +80,7 @@ body > img {
 
 	width:50%;
 
-	background-color: var(--uofiaccentblue);
-	
 	color:white;
-	
-	border-color: var(--uofilightgray);
 
 	font-size: 20px;
 }

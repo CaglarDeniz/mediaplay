@@ -7,12 +7,14 @@ import './index.css'
 
 const blueBackground = {
 
-	backgroundColor:"var(--uofiblue)"
+	backgroundColor:"var(--uofiblue)",
+	borderColour:"var(--uofiblue)"
 }
 
 const orangeBackground = {
 
-	backgroundColor:"var(--uofichampaignorange)"
+	backgroundColor:"var(--uofichampaignorange)",
+	borderColour:"var(--uofichampaignorange)"
 }
 
 type AppState = {toggledMediaSpace:boolean,

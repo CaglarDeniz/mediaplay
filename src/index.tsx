@@ -61,7 +61,12 @@ class App extends React.Component<AppProps,AppState> {
 	}
 
 	onFileUpload() {
-		if (this.state.videoLinkString !== "" && this.state.playlistLinkString === "") {
+
+		if (!this.state.toggledMediaSpace) {
+			alert("The Echo360 functionality is not implemented yet, sorry for the inconvenience!")
+			return;
+		}
+		else if (this.state.videoLinkString !== "" && this.state.playlistLinkString === "") {
 			console.log("File succesfully uploaded with filename: " + this.state.selectedFile.name);
 			
 			let formData = new FormData() ; 
@@ -83,6 +88,8 @@ class App extends React.Component<AppProps,AppState> {
 				console.log(error); 
 				this.setState({downloadError:true,downloading:false,downloadComplete:false,downloadObject:""});
 			});
+
+			return ;
 		}
 
 		else if  (this.state.playlistLinkString !== "" && this.state.videoLinkString === "") {
@@ -106,10 +113,13 @@ class App extends React.Component<AppProps,AppState> {
 				console.log(error); 
 				this.setState({downloadError:true,downloading:false,downloadComplete:false,downloadObject:""});
 			});
+
+			return;
 		}
 
 		else {
 			alert("Please fill only one of the video/playlist link fields");
+			return;
 		}
 	}
 	onVideoLinkProvided(e:any) {

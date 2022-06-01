@@ -12,15 +12,15 @@
 ### Docker
 - To verify that docker is installed it suffices to run 
 
-`
+	`
 	$ sudo systemctl start docker && docker --version
-`
+	`
 
 - The expected output for this command is something along the lines of 
 
-`
+	`
 	Docker version 20.10.2, build 2291f61
-`
+	`
 
 - If docker is not already installed, you can install docker by following the instructions found [here](https://docs.docker.com/get-docker/)
 

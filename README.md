@@ -13,7 +13,7 @@
 - To verify that docker is installed it suffices to run 
 
 `
-	$ sudo systemctl star docker && docker --version
+	$ sudo systemctl start docker && docker --version
 `
 
 - The expected output for this command is something along the lines of 
